@@ -51,19 +51,7 @@
 <p align="center">
 <input type="text" name="txtTotal" size="10" value ="0.00"></p></form>
   
-  <script language="javascript">
-  function calcTotal(){
-   var strRod, strBox, prRod, prBox, strTotal;
-    strRod=document.form.qRod.value;
-    strBox=document.form.qBox.value;
-    prRod=document.form.txtRod.value;
-    prBox=document.form.txtBox.value;
-    
-    strRod=parseInt(strRod)*prRod;
-    strBox=parseInt(strBox)*prBox;
-    strTotal=(strRod + strBox);
-    document.form.txtTotal.value=strTotal;
-  }
+ 
   
   <h3> Choose a color for your background </h3> 
 <form name = "frmColor action ="javascript:void(0;)>
@@ -75,7 +63,7 @@
 <input type = "submit" value = "Silver" name = "bS" onClick="selectColor('Silver')">
 <input type = "submit" value = "Red" name = "bR" onClick="selectColor('Red')"> 
 <script language="javascript"> 
-function selectColor(selectColor){ document.bgColor=selectColor; } </script></body></html>
+function selectColor(selectColor){ document.bgColor=selectColor; } </script>
 
   
   
